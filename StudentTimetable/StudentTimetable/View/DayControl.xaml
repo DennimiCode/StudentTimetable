@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentTimetable.View.DayControl"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources">
+
+    <ContentView.Content>
+        <StackLayout>
+            <Frame x:Name="DayControlFrame"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                        Dark={StaticResource CardBackgroundColorDark}}"
+                   CornerRadius="15"
+                   HeightRequest="35"
+                   VerticalOptions="StartAndExpand">
+                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                    <StackLayout WidthRequest="60">
+                        <Label
+                            x:Name="StartTimeLabel"
+                            Text="{x:Static resources:AppResources.StartTimeLabel}"
+                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                Dark={StaticResource DarkTextColor}}" />
+
+                        <Label
+                            x:Name="EndTimeLabel"
+                            Text="{x:Static resources:AppResources.EndTimeLabel}"
+                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                Dark={StaticResource DarkTextColor}}" />
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label
+                            x:Name="SubjectLabel"
+                            Text="{x:Static resources:AppResources.SubjectLabel}"
+                            LineBreakMode="TailTruncation"
+                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                Dark={StaticResource DarkTextColor}}" />
+
+                        <StackLayout Orientation="Horizontal" Spacing="105">
+                            <Label
+                                x:Name="OfficeLabel"
+                                Text="{x:Static resources:AppResources.OfficeLabel}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                    Dark={StaticResource DarkTextColor}}" />
+
+                            <Label
+                                x:Name="TeacherLabel"
+                                Text="{x:Static resources:AppResources.TeacherLabel}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                    Dark={StaticResource DarkTextColor}}"
+                                LineBreakMode="TailTruncation"
+                                HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

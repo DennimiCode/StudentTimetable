@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentTimetable.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryTextColor">#000000</Color>
+            <Color x:Key="DarkTextColor">#bbbdbf</Color>
+            
+            <Color x:Key="WindowBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="WindowBackgroundColorDark">#000000</Color>
+            
+            <Color x:Key="ZoneBackgroundColor">#ebe9e6</Color>
+            <Color x:Key="ZoneBackgroundColorDark">#1c1c1c</Color>
+            
+            <Color x:Key="CardBackgroundColor">#ebe8e8</Color>
+            <Color x:Key="CardBackgroundColorDark">#57595c</Color>
+            
+            <Color x:Key="NavBarBackgroundColor">#e0dfdc</Color>
+            <Color x:Key="NavBarBackgroundColorDark">#262626</Color>
+            
+            <Color x:Key="NavBarButtonBackgroundColor">#d1d0cd</Color>
+            <Color x:Key="NavBarButtonBackgroundColorDark">#575653</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

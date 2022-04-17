@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cxXaPEOb1N3HluqCMhVUouLDCnmIMU59jnWMeQLFhPkhyYG6TIuTZ4CGzMvb76Rjv5nsqcCeA6vuKQAKxEwjDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\denni\\Desktop\\StudentTimetable\\StudentTimetable\\StudentTimetable.iOS\\StudentTimetable.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\denni\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\denni\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\denni\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentTimetable.View.Pages.TimetablePage"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources"
+             NavigationPage.HasNavigationBar="false">
+
+    <Grid
+        BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
+            Dark={StaticResource WindowBackgroundColorDark}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Column="0"
+                Margin="15, 15, 0, 15"
+                Text="{x:Static resources:AppResources.TimetablePageTitle}"
+                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                    Dark={StaticResource DarkTextColor}}"
+                FontSize="18"
+                FontAttributes="Bold" />
+            <Button
+                Grid.Column="1"
+                x:Name="EditLessonButton"
+                Margin="5, 5, 65, 0"
+                Text="✏️"
+                FontSize="18"
+                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                    Dark={StaticResource DarkTextColor}}"
+                BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                    Dark={StaticResource ZoneBackgroundColorDark}}"
+                CornerRadius="15"
+                HorizontalOptions="EndAndExpand"
+                WidthRequest="45"
+                HeightRequest="50"
+                Clicked="EditLessonButtonClicked" />
+            <Button
+                Grid.Column="1"
+                x:Name="AddLessonButton"
+                Margin="5, 5, 10, 0"
+                Text="+"
+                FontSize="18"
+                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                    Dark={StaticResource DarkTextColor}}"
+                BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                    Dark={StaticResource ZoneBackgroundColorDark}}"
+                CornerRadius="15"
+                HorizontalOptions="EndAndExpand"
+                WidthRequest="45"
+                HeightRequest="50"
+                Clicked="AddLessonButtonClicked" />
+        </Grid>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout>
+                <StackLayout>
+                    <Frame x:Name="MondayFrame"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                                Dark={StaticResource ZoneBackgroundColorDark}}"
+                           CornerRadius="20"
+                           Margin="10">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    x:Name="MondayTextLabel"
+                                    Text="{x:Static resources:AppResources.MondayTextLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                                <Label
+                                    x:Name="MondayDateLabel"
+                                    Text="{x:Static resources:AppResources.DateLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            </StackLayout>
+
+                            <StackLayout x:Name="Monday">
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Frame x:Name="TuesdayFrame"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                                Dark={StaticResource ZoneBackgroundColorDark}}"
+                           CornerRadius="20"
+                           Margin="10">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    x:Name="TuesdayTextLabel"
+                                    Text="{x:Static resources:AppResources.TuesdayTextLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                                <Label
+                                    x:Name="TuesdayDateLabel"
+                                    Text="{x:Static resources:AppResources.DateLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            </StackLayout>
+
+                            <StackLayout x:Name="Tuesday">
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Frame x:Name="WednesdayFrame"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                                Dark={StaticResource ZoneBackgroundColorDark}}"
+                           CornerRadius="20"
+                           Margin="10">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    x:Name="WednesdayTextLabel"
+                                    Text="{x:Static resources:AppResources.WednesdayTextLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                                <Label
+                                    x:Name="WednesdayDateLabel"
+                                    Text="{x:Static resources:AppResources.DateLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            </StackLayout>
+
+                            <StackLayout x:Name="Wednesday">
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Frame x:Name="ThursdayFrame"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                                Dark={StaticResource ZoneBackgroundColorDark}}"
+                           CornerRadius="20"
+                           Margin="10">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    x:Name="ThursdayTextLabel"
+                                    Text="{x:Static resources:AppResources.ThursdayTextLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                                <Label
+                                    x:Name="ThursdayDateLabel"
+                                    Text="{x:Static resources:AppResources.DateLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            </StackLayout>
+
+                            <StackLayout x:Name="Thursday">
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Frame x:Name="FridayFrame"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                                Dark={StaticResource ZoneBackgroundColorDark}}"
+                           CornerRadius="20"
+                           Margin="10">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    x:Name="FridayTextLabel"
+                                    Text="{x:Static resources:AppResources.FridayTextLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                                <Label
+                                    x:Name="FridayDateLabel"
+                                    Text="{x:Static resources:AppResources.DateLabel}"
+                                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            </StackLayout>
+
+                            <StackLayout x:Name="Friday">
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <!--This Label placed for navigation bar-->
+                <Label HeightRequest="100" />
+            </StackLayout>
+        </ScrollView>
+
+        <Frame
+            Grid.Row="1"
+            x:Name="NavigationBar"
+            BackgroundColor="{AppThemeBinding Light={StaticResource NavBarBackgroundColor}, 
+                Dark={StaticResource NavBarBackgroundColorDark}}"
+            Margin="15"
+            HeightRequest="40"
+            CornerRadius="20"
+            VerticalOptions="EndAndExpand">
+
+            <StackLayout Orientation="Horizontal">
+                <Button
+                    x:Name="TimetableButton"
+                    Text="🗓️"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource NavBarButtonBackgroundColor}, 
+                        Dark={StaticResource NavBarButtonBackgroundColorDark}}"
+                    HorizontalOptions="StartAndExpand"
+                    CornerRadius="15"
+                    WidthRequest="105"
+                    HeightRequest="50" />
+                <Button
+                    x:Name="HomeTasksButton"
+                    Text="📝"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource NavBarButtonBackgroundColor}, 
+                        Dark={StaticResource NavBarButtonBackgroundColorDark}}"
+                    HorizontalOptions="CenterAndExpand"
+                    CornerRadius="15"
+                    WidthRequest="105"
+                    HeightRequest="50"
+                    Clicked="HomeTasksButtonOnClicked" />
+
+                <Button
+                    x:Name="SettingsButton"
+                    Text="⚙️"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource NavBarButtonBackgroundColor}, 
+                        Dark={StaticResource NavBarButtonBackgroundColorDark}}"
+                    HorizontalOptions="EndAndExpand"
+                    CornerRadius="15"
+                    WidthRequest="105"
+                    HeightRequest="50"
+                    Clicked="SettingsButtonOnClicked" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
