@@ -61,6 +61,15 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add lesson.
+        /// </summary>
+        internal static string AddLessonPageTitle {
+            get {
+                return ResourceManager.GetString("AddLessonPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Color progression.
         /// </summary>
         internal static string ColorProgressionLabel {
@@ -88,6 +97,78 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Class type.
+        /// </summary>
+        internal static string EditLessonPageClassTypeLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageClassTypeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Course.
+        /// </summary>
+        internal static string EditLessonPageCourseLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageCourseLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End at.
+        /// </summary>
+        internal static string EditLessonPageEndTimeLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageEndTimeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Office.
+        /// </summary>
+        internal static string EditLessonPageOfficeLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageOfficeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start at.
+        /// </summary>
+        internal static string EditLessonPageStartTimeLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageStartTimeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teacher.
+        /// </summary>
+        internal static string EditLessonPageTeacherLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageTeacherLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit lesson.
+        /// </summary>
+        internal static string EditLessonPageTitle {
+            get {
+                return ResourceManager.GetString("EditLessonPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day of the week.
+        /// </summary>
+        internal static string EditLessonPageWeekDayLabel {
+            get {
+                return ResourceManager.GetString("EditLessonPageWeekDayLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to End tm.
         /// </summary>
         internal static string EndTimeLabel {
@@ -106,11 +187,74 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Course name.
+        /// </summary>
+        internal static string HomeworkControlCourseName {
+            get {
+                return ResourceManager.GetString("HomeworkControlCourseName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Due date.
+        /// </summary>
+        internal static string HomeworkControlDueDate {
+            get {
+                return ResourceManager.GetString("HomeworkControlDueDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        internal static string HomeworkControlTitle {
+            get {
+                return ResourceManager.GetString("HomeworkControlTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed Tasks.
+        /// </summary>
+        internal static string HomeworkPageCompletedTasks {
+            get {
+                return ResourceManager.GetString("HomeworkPageCompletedTasks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current tasks.
+        /// </summary>
+        internal static string HomeworkPageCurrentTasks {
+            get {
+                return ResourceManager.GetString("HomeworkPageCurrentTasks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Homework.
         /// </summary>
         internal static string HomeworkPageTitle {
             get {
                 return ResourceManager.GetString("HomeworkPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string LessonPageAddButton {
+            get {
+                return ResourceManager.GetString("LessonPageAddButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string LessonPageDeleteButton {
+            get {
+                return ResourceManager.GetString("LessonPageDeleteButton", resourceCulture);
             }
         }
         
@@ -138,6 +282,42 @@ namespace StudentTimetable.Resources {
         internal static string OfficeLabel {
             get {
                 return ResourceManager.GetString("OfficeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I&apos;ll do it later.
+        /// </summary>
+        internal static string SaveSettingAlertNo {
+            get {
+                return ResourceManager.GetString("SaveSettingAlertNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To apply this setting, you need to restart the application..
+        /// </summary>
+        internal static string SaveSettingAlertText {
+            get {
+                return ResourceManager.GetString("SaveSettingAlertText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saving setting.
+        /// </summary>
+        internal static string SaveSettingAlertTitle {
+            get {
+                return ResourceManager.GetString("SaveSettingAlertTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart now.
+        /// </summary>
+        internal static string SaveSettingAlertYes {
+            get {
+                return ResourceManager.GetString("SaveSettingAlertYes", resourceCulture);
             }
         }
         

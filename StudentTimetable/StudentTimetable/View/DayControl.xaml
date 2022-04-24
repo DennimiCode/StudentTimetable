@@ -7,6 +7,10 @@
 
     <ContentView.Content>
         <StackLayout>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="DayControlOnTapped"/>
+            </StackLayout.GestureRecognizers>
+            
             <Frame x:Name="DayControlFrame"
                    BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
                         Dark={StaticResource CardBackgroundColorDark}}"

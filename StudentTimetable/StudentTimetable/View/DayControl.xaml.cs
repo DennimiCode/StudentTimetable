@@ -1,5 +1,8 @@
 ﻿using System;
 
+using StudentTimetable.Helpers;
+using StudentTimetable.View.ModalPages;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
@@ -22,7 +25,7 @@ namespace StudentTimetable.View
             OfficeLabel.Text = office;
             TeacherLabel.Text = teacher;
 
-            if (Preferences.Get("IsColorProgression", true) == true && Convert.ToInt32(DateTime.Now.DayOfWeek) == dayOfWeek)
+            if (Preferences.Get(nameof(Settings.ColorProgression), true) && Convert.ToInt32(DateTime.Now.DayOfWeek) == dayOfWeek)
             {
                 DateTime endDateTime = Convert.ToDateTime(endTime);
                 DateTime startDateTime = Convert.ToDateTime(startTime);
@@ -32,8 +35,14 @@ namespace StudentTimetable.View
                 else if (DateTime.Now >= startDateTime && DateTime.Now <= endDateTime)
                     DayControlFrame.BackgroundColor = Color.FromHex("#52992e");
                 else if (DateTime.Now < startDateTime)
-                    DayControlFrame.BackgroundColor = Color.FromHex("#57595c");
+                    DayControlFrame.SetOnAppTheme(BackgroundColorProperty, (Color)App.Current.Resources["CardBackgroundColor"],
+                        (Color)App.Current.Resources["CardBackgroundColorDark"]);
             }
+        }
+
+        private async void DayControlOnTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EditLessonModalPage(true));
         }
     }
 }

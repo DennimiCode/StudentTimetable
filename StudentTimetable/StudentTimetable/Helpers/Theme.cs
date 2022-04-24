@@ -13,7 +13,6 @@ namespace StudentTimetable.Helpers
                     break;
                 case 1:
                     App.Current.UserAppTheme = OSAppTheme.Light;
-                    
                     break;
                 case 2:
                     App.Current.UserAppTheme = OSAppTheme.Dark;

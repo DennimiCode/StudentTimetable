@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using Xamarin.Forms;
 
 namespace StudentTimetable.View.Pages
@@ -10,14 +11,14 @@ namespace StudentTimetable.View.Pages
         public TimetablePage()
         {
             InitializeComponent();
-            var test = new View.DayControl("14:50", "16:20", "МДК 01.01 Разработка ПМ", "201", "Задеба А.А.", 5);
-            var test2 = new View.DayControl("09:00", "10:30", "МДК 01.02 Разработка мобильных приложений", "407", "Егорова Н.Ю.", 5);
-            var test3 = new View.DayControl("10:40", "11:25", "МДК 01.02 Разработка мобильных приложений", "407", "Егорова Н.Ю.", 5);
-            var test4 = new View.DayControl("11:25", "12:30", "МДК 01.02 Разработка мобильных приложений", "407", "Егорова Н.Ю.", 5);
-            var test5 = new View.DayControl("12:50", "13:35", "МДК 02.03 Математическое моделирование", "301", "Кузьмина О.Б.", 5);
-            var test6 = new View.DayControl("13:55", "14:40", "МДК 02.03 Математическое моделирование", "301", "Кузьмина О.Б.", 5);
+            var test = new DayControl("14:50", "16:20", "МДК 01.01 Разработка ПМ", "201", "Задеба А.А.", 5);
+            var test2 = new DayControl("09:00", "10:30", "МДК 01.02 Разработка мобильных приложений", "407", "Егорова Н.Ю.", 5);
+            var test3 = new DayControl("10:40", "11:25", "МДК 01.02 Разработка мобильных приложений", "407", "Егорова Н.Ю.", 5);
+            var test4 = new DayControl("11:25", "12:30", "МДК 01.02 Разработка мобильных приложений", "407", "Егорова Н.Ю.", 5);
+            var test5 = new DayControl("12:50", "13:35", "МДК 02.03 Математическое моделирование", "301", "Кузьмина О.Б.", 5);
+            var test6 = new DayControl("13:55", "14:40", "МДК 02.03 Математическое моделирование", "301", "Кузьмина О.Б.", 5);
 
-            var tests = new List<View.DayControl> { test, test2, test3, test4, test5, test6 }.OrderBy(dc => dc.StartTime).ToList();
+            var tests = new List<DayControl> { test, test2, test3, test4, test5, test6 }.OrderBy(dc => dc.StartTime).ToList();
 
             foreach (var dayControl in tests)
             {
@@ -125,14 +126,9 @@ namespace StudentTimetable.View.Pages
             await Navigation.PushAsync(new HomeworkPage(), false);
         }
 
-        private async void AddLessonButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ModalPages.AddLessonModalPage());
-        }
-
         private async void EditLessonButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new ModalPages.EditLessonModalPage());
+            await Navigation.PushModalAsync(new ModalPages.EditLessonModalPage(false));
         }
     }
 }

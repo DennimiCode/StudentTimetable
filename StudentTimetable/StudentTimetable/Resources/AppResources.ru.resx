@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddLessonPageTitle" xml:space="preserve">
+    <value>Добавить занятие</value>
+  </data>
   <data name="ColorProgressionLabel" xml:space="preserve">
     <value>Цветовая прогрессия</value>
   </data>
@@ -126,14 +129,59 @@
   <data name="DateLabel" xml:space="preserve">
     <value>Число</value>
   </data>
+  <data name="EditLessonPageClassTypeLabel" xml:space="preserve">
+    <value>Тип занятия</value>
+  </data>
+  <data name="EditLessonPageCourseLabel" xml:space="preserve">
+    <value>Урок</value>
+  </data>
+  <data name="EditLessonPageEndTimeLabel" xml:space="preserve">
+    <value>Конец в</value>
+  </data>
+  <data name="EditLessonPageOfficeLabel" xml:space="preserve">
+    <value>Кабинет</value>
+  </data>
+  <data name="EditLessonPageStartTimeLabel" xml:space="preserve">
+    <value>Начало в</value>
+  </data>
+  <data name="EditLessonPageTeacherLabel" xml:space="preserve">
+    <value>Преподаватель</value>
+  </data>
+  <data name="EditLessonPageTitle" xml:space="preserve">
+    <value>Редактировать занятие</value>
+  </data>
+  <data name="EditLessonPageWeekDayLabel" xml:space="preserve">
+    <value>День недели</value>
+  </data>
   <data name="EndTimeLabel" xml:space="preserve">
     <value>Вр кон</value>
   </data>
   <data name="FridayTextLabel" xml:space="preserve">
     <value>Пятница</value>
   </data>
+  <data name="HomeworkControlCourseName" xml:space="preserve">
+    <value>Название курса</value>
+  </data>
+  <data name="HomeworkControlDueDate" xml:space="preserve">
+    <value>Срок выполнения</value>
+  </data>
+  <data name="HomeworkControlTitle" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="HomeworkPageCompletedTasks" xml:space="preserve">
+    <value>Выполненные задания</value>
+  </data>
+  <data name="HomeworkPageCurrentTasks" xml:space="preserve">
+    <value>Текущие задания</value>
+  </data>
   <data name="HomeworkPageTitle" xml:space="preserve">
     <value>Домашние задания</value>
+  </data>
+  <data name="LessonPageAddButton" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="LessonPageDeleteButton" xml:space="preserve">
+    <value>Удалить</value>
   </data>
   <data name="LightThemeLabel" xml:space="preserve">
     <value>Светлая</value>
@@ -143,6 +191,18 @@
   </data>
   <data name="OfficeLabel" xml:space="preserve">
     <value>Каб</value>
+  </data>
+  <data name="SaveSettingAlertNo" xml:space="preserve">
+    <value>Позже</value>
+  </data>
+  <data name="SaveSettingAlertText" xml:space="preserve">
+    <value>Чтобы изменения вступили в силу, необходимо перезапустить приложение.</value>
+  </data>
+  <data name="SaveSettingAlertTitle" xml:space="preserve">
+    <value>Сохранение настройки</value>
+  </data>
+  <data name="SaveSettingAlertYes" xml:space="preserve">
+    <value>Перезапустить сейчас</value>
   </data>
   <data name="SettingsPageTitle" xml:space="preserve">
     <value>Настройки</value>

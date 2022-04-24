@@ -6,11 +6,10 @@
              xmlns:resources="clr-namespace:StudentTimetable.Resources"
              NavigationPage.HasNavigationBar="false">
 
-    <Grid
-        BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
+    <Grid BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
             Dark={StaticResource WindowBackgroundColorDark}}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
+            <RowDefinition Height="55" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
@@ -30,21 +29,6 @@
                 FontAttributes="Bold" />
             <Button
                 Grid.Column="1"
-                x:Name="EditLessonButton"
-                Margin="5, 5, 65, 0"
-                Text="✏️"
-                FontSize="18"
-                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
-                    Dark={StaticResource DarkTextColor}}"
-                BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
-                    Dark={StaticResource ZoneBackgroundColorDark}}"
-                CornerRadius="15"
-                HorizontalOptions="EndAndExpand"
-                WidthRequest="45"
-                HeightRequest="50"
-                Clicked="EditLessonButtonClicked" />
-            <Button
-                Grid.Column="1"
                 x:Name="AddLessonButton"
                 Margin="5, 5, 10, 0"
                 Text="+"
@@ -57,7 +41,7 @@
                 HorizontalOptions="EndAndExpand"
                 WidthRequest="45"
                 HeightRequest="50"
-                Clicked="AddLessonButtonClicked" />
+                Clicked="EditLessonButtonClicked" />
         </Grid>
 
         <ScrollView Grid.Row="1">

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <style name="MainTheme" parent="MainTheme.Base">
-      <item name="colorPrimaryDark">#000000</item>
-      <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="android:timePickerDialogTheme">@style/CustomTimePickerDialog</item>
+    </style>
+
+    <style name="CustomTimePickerDialog" >
+        <item name="colorAccent">#2f6bc5</item>
     </style>
     
     <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">

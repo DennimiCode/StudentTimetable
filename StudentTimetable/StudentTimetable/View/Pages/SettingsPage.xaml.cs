@@ -1,7 +1,10 @@
 ﻿using System;
+
+using StudentTimetable.Helpers;
+using StudentTimetable.Resources;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using StudentTimetable.Helpers;
 
 namespace StudentTimetable.View.Pages
 {
@@ -38,9 +41,15 @@ namespace StudentTimetable.View.Pages
             await Navigation.PushAsync(new HomeworkPage(), false);
         }
 
-        private void IsColorProgressionOnToggled(object sender, ToggledEventArgs e)
+        private async void IsColorProgressionOnToggled(object sender, ToggledEventArgs e)
         {
             Settings.ColorProgression = IsColorProgressionSwitch.IsToggled;
+            bool restartAlert = await DisplayAlert(AppResources.SaveSettingAlertTitle, AppResources.SaveSettingAlertText, 
+                AppResources.SaveSettingAlertYes, AppResources.SaveSettingAlertNo);
+
+            if (restartAlert)
+                Application.Current.MainPage = new NavigationPage(new TimetablePage());
+
         }
 
         private void RadioButtonOnCheckedChanged(object sender, CheckedChangedEventArgs e)
