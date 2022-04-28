@@ -8,55 +8,71 @@
     <ContentView.Content>
         <StackLayout>
             <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Tapped="DayControlOnTapped"/>
+                <TapGestureRecognizer Tapped="DayControlOnTapped" />
             </StackLayout.GestureRecognizers>
-            
+
             <Frame x:Name="DayControlFrame"
                    BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
                         Dark={StaticResource CardBackgroundColorDark}}"
                    CornerRadius="15"
                    HeightRequest="35"
                    VerticalOptions="StartAndExpand">
-                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
-                    <StackLayout WidthRequest="60">
+                <Grid VerticalOptions="StartAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="18" />
+                        <RowDefinition Height="18" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="StartTimeLabel"
+                        Text="{x:Static resources:AppResources.StartTimeLabel}"
+                        TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                            Dark={StaticResource DarkTextColor}}" />
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        x:Name="EndTimeLabel"
+                        Text="{x:Static resources:AppResources.EndTimeLabel}"
+                        TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                            Dark={StaticResource DarkTextColor}}" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        HorizontalOptions="StartAndExpand"
+                        x:Name="SubjectLabel"
+                        Text="{x:Static resources:AppResources.SubjectLabel}"
+                        LineBreakMode="TailTruncation"
+                        TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                            Dark={StaticResource DarkTextColor}}" />
+
+                    <StackLayout Grid.Row="1"
+                                 Grid.Column="1"
+                                 Orientation="Horizontal">
                         <Label
-                            x:Name="StartTimeLabel"
-                            Text="{x:Static resources:AppResources.StartTimeLabel}"
+                            x:Name="OfficeLabel"
+                            HorizontalOptions="Start"
+                            Text="{x:Static resources:AppResources.OfficeLabel}"
                             TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
                                 Dark={StaticResource DarkTextColor}}" />
 
                         <Label
-                            x:Name="EndTimeLabel"
-                            Text="{x:Static resources:AppResources.EndTimeLabel}"
+                            x:Name="TeacherLabel"
+                            Text="{x:Static resources:AppResources.TeacherLabel}"
                             TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
-                                Dark={StaticResource DarkTextColor}}" />
-                    </StackLayout>
-
-                    <StackLayout>
-                        <Label
-                            x:Name="SubjectLabel"
-                            Text="{x:Static resources:AppResources.SubjectLabel}"
+                                Dark={StaticResource DarkTextColor}}"
                             LineBreakMode="TailTruncation"
-                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
-                                Dark={StaticResource DarkTextColor}}" />
-
-                        <StackLayout Orientation="Horizontal" Spacing="105">
-                            <Label
-                                x:Name="OfficeLabel"
-                                Text="{x:Static resources:AppResources.OfficeLabel}"
-                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
-                                    Dark={StaticResource DarkTextColor}}" />
-
-                            <Label
-                                x:Name="TeacherLabel"
-                                Text="{x:Static resources:AppResources.TeacherLabel}"
-                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
-                                    Dark={StaticResource DarkTextColor}}"
-                                LineBreakMode="TailTruncation"
-                                HorizontalOptions="EndAndExpand" />
-                        </StackLayout>
+                            HorizontalOptions="EndAndExpand" />
                     </StackLayout>
-                </StackLayout>
+                </Grid>
             </Frame>
         </StackLayout>
     </ContentView.Content>

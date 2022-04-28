@@ -6,7 +6,8 @@
              xmlns:resources="clr-namespace:StudentTimetable.Resources"
              NavigationPage.HasNavigationBar="false">
 
-    <Grid BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
+    <Grid
+        BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
             Dark={StaticResource WindowBackgroundColorDark}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="55" />
@@ -67,7 +68,6 @@
                             </StackLayout>
 
                             <StackLayout x:Name="Monday">
-
                             </StackLayout>
                         </StackLayout>
                     </Frame>
