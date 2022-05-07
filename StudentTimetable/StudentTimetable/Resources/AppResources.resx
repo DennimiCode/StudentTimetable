@@ -156,6 +156,18 @@
   <data name="EndTimeLabel" xml:space="preserve">
     <value>End tm</value>
   </data>
+  <data name="ExitAlertNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ExitAlertText" xml:space="preserve">
+    <value>Do you really want to leave this page? You will lose all entered data!</value>
+  </data>
+  <data name="ExitAlertTitle" xml:space="preserve">
+    <value>Leave?</value>
+  </data>
+  <data name="ExitAlertYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
   <data name="FridayTextLabel" xml:space="preserve">
     <value>Friday</value>
   </data>
@@ -168,11 +180,20 @@
   <data name="HomeworkControlTitle" xml:space="preserve">
     <value>Title</value>
   </data>
+  <data name="HomeworkAddModalPageTitle" xml:space="preserve">
+    <value>Add homework</value>
+  </data>
   <data name="HomeworkPageCompletedTasks" xml:space="preserve">
-    <value>Completed Tasks</value>
+    <value>Completed tasks</value>
   </data>
   <data name="HomeworkPageCurrentTasks" xml:space="preserve">
     <value>Current tasks</value>
+  </data>
+  <data name="HomeworkPageModalAddButton" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="HomeworkPageModalDeleteButton" xml:space="preserve">
+    <value>Delete</value>
   </data>
   <data name="HomeworkPageTitle" xml:space="preserve">
     <value>Homework</value>
@@ -233,5 +254,44 @@
   </data>
   <data name="WednesdayTextLabel" xml:space="preserve">
     <value>Wednesday</value>
+  </data>
+  <data name="HomeworkEdtPageModalTitle" xml:space="preserve">
+    <value>Edit homework</value>
+  </data>
+  <data name="AddLessonCheckEntriesAlertTitle" xml:space="preserve">
+    <value>Check entries</value>
+  </data>
+  <data name="AddLessonCheckEntriesAlertText" xml:space="preserve">
+    <value>All entries should not be empty, and the office should be a number!</value>
+  </data>
+  <data name="AddLessonCheckEntriesAlertAccept" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="WeekDayPickerTitle" xml:space="preserve">
+    <value>Day of the week</value>
+  </data>
+  <data name="SubjectPickerTittle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="HomeworkEditPageDueDateLabel" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+  <data name="HomeworkEditPageSubjectPickerLabel" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="HomeworkEditPageTextEntry" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="IsCompletedLabel" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="EditHomeworkCheckEntriesAlertText" xml:space="preserve">
+    <value>All entries should not be empty!</value>
+  </data>
+  <data name="EditHomeworkCheckEntriesAlertTitle" xml:space="preserve">
+    <value>Check entries</value>
+  </data>
+  <data name="EditHomeworkCheckEntriesAlertAccept" xml:space="preserve">
+    <value>OK</value>
   </data>
 </root>

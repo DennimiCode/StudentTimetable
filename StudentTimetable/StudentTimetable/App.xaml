@@ -7,6 +7,9 @@
             <Color x:Key="PrimaryTextColor">#000000</Color>
             <Color x:Key="DarkTextColor">#bbbdbf</Color>
             
+            <Color x:Key="PrimaryPlaceholderColor">#929292</Color>
+            <Color x:Key="DarkPlaceholderColor"></Color>
+            
             <Color x:Key="WindowBackgroundColor">#FFFFFF</Color>
             <Color x:Key="WindowBackgroundColorDark">#000000</Color>
             

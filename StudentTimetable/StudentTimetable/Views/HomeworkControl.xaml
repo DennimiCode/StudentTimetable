@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources"
+             x:Class="StudentTimetable.Views.HomeworkControl">
+    
+  <ContentView.Content>
+      <StackLayout>
+          <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Tapped="HomeworkControlOnTapped"/>
+          </StackLayout.GestureRecognizers>
+          
+          <Frame x:Name="HomeworkControlFrame"
+                 BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                     Dark={StaticResource CardBackgroundColorDark}}"
+                 CornerRadius="15"
+                 HeightRequest="35"
+                 Margin="20, 0"
+                 VerticalOptions="StartAndExpand">
+              <Grid>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="20"/>
+                      <RowDefinition Height="30"/>
+                  </Grid.RowDefinitions>
+                  
+                  <Label
+                      Grid.Row="0"
+                      Grid.Column="0"
+                      x:Name="TitleLabel"
+                      Text="{Binding Text}"
+                      FontSize="16"
+                      FontAttributes="Bold"
+                      LineBreakMode="TailTruncation"
+                      TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                  Dark={StaticResource DarkTextColor}}" />
+                  
+                  <StackLayout
+                      Grid.Row="1"
+                      Orientation="Horizontal">
+                      <Label
+                          x:Name="SubjectLabel"
+                          LineBreakMode="TailTruncation"
+                          VerticalOptions="Center"
+                          HorizontalOptions="StartAndExpand"
+                          Text="{x:Static resources:AppResources.HomeworkControlCourseName}"
+                          TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                  Dark={StaticResource DarkTextColor}}" />
+                      
+                      <Label
+                          x:Name="DueDateLabel"
+                          Text="{Binding DueDate}"
+                          VerticalOptions="Center"
+                          HorizontalOptions="EndAndExpand"
+                          TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                  Dark={StaticResource DarkTextColor}}" />
+                  </StackLayout>
+              </Grid>
+          </Frame>
+      </StackLayout>
+  </ContentView.Content>
+</ContentView>

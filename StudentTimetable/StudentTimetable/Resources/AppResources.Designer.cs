@@ -61,6 +61,33 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string AddLessonCheckEntriesAlertAccept {
+            get {
+                return ResourceManager.GetString("AddLessonCheckEntriesAlertAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All entries should not be empty, and the office should be a number!.
+        /// </summary>
+        internal static string AddLessonCheckEntriesAlertText {
+            get {
+                return ResourceManager.GetString("AddLessonCheckEntriesAlertText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check entries.
+        /// </summary>
+        internal static string AddLessonCheckEntriesAlertTitle {
+            get {
+                return ResourceManager.GetString("AddLessonCheckEntriesAlertTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add lesson.
         /// </summary>
         internal static string AddLessonPageTitle {
@@ -93,6 +120,33 @@ namespace StudentTimetable.Resources {
         internal static string DateLabel {
             get {
                 return ResourceManager.GetString("DateLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string EditHomeworkCheckEntriesAlertAccept {
+            get {
+                return ResourceManager.GetString("EditHomeworkCheckEntriesAlertAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All entries should not be empty!.
+        /// </summary>
+        internal static string EditHomeworkCheckEntriesAlertText {
+            get {
+                return ResourceManager.GetString("EditHomeworkCheckEntriesAlertText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check entries.
+        /// </summary>
+        internal static string EditHomeworkCheckEntriesAlertTitle {
+            get {
+                return ResourceManager.GetString("EditHomeworkCheckEntriesAlertTitle", resourceCulture);
             }
         }
         
@@ -178,11 +232,56 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string ExitAlertNo {
+            get {
+                return ResourceManager.GetString("ExitAlertNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do you really want to leave this page? You will lose all entered data!.
+        /// </summary>
+        internal static string ExitAlertText {
+            get {
+                return ResourceManager.GetString("ExitAlertText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leave?.
+        /// </summary>
+        internal static string ExitAlertTitle {
+            get {
+                return ResourceManager.GetString("ExitAlertTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string ExitAlertYes {
+            get {
+                return ResourceManager.GetString("ExitAlertYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Friday.
         /// </summary>
         internal static string FridayTextLabel {
             get {
                 return ResourceManager.GetString("FridayTextLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add homework.
+        /// </summary>
+        internal static string HomeworkAddModalPageTitle {
+            get {
+                return ResourceManager.GetString("HomeworkAddModalPageTitle", resourceCulture);
             }
         }
         
@@ -214,7 +313,43 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completed Tasks.
+        ///   Looks up a localized string similar to Due date.
+        /// </summary>
+        internal static string HomeworkEditPageDueDateLabel {
+            get {
+                return ResourceManager.GetString("HomeworkEditPageDueDateLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject.
+        /// </summary>
+        internal static string HomeworkEditPageSubjectPickerLabel {
+            get {
+                return ResourceManager.GetString("HomeworkEditPageSubjectPickerLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Task.
+        /// </summary>
+        internal static string HomeworkEditPageTextEntry {
+            get {
+                return ResourceManager.GetString("HomeworkEditPageTextEntry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit homework.
+        /// </summary>
+        internal static string HomeworkEdtPageModalTitle {
+            get {
+                return ResourceManager.GetString("HomeworkEdtPageModalTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed tasks.
         /// </summary>
         internal static string HomeworkPageCompletedTasks {
             get {
@@ -232,11 +367,38 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string HomeworkPageModalAddButton {
+            get {
+                return ResourceManager.GetString("HomeworkPageModalAddButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string HomeworkPageModalDeleteButton {
+            get {
+                return ResourceManager.GetString("HomeworkPageModalDeleteButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Homework.
         /// </summary>
         internal static string HomeworkPageTitle {
             get {
                 return ResourceManager.GetString("HomeworkPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        internal static string IsCompletedLabel {
+            get {
+                return ResourceManager.GetString("IsCompletedLabel", resourceCulture);
             }
         }
         
@@ -349,6 +511,15 @@ namespace StudentTimetable.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Subject.
+        /// </summary>
+        internal static string SubjectPickerTittle {
+            get {
+                return ResourceManager.GetString("SubjectPickerTittle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to System.
         /// </summary>
         internal static string SystemThemeLabel {
@@ -408,6 +579,15 @@ namespace StudentTimetable.Resources {
         internal static string WednesdayTextLabel {
             get {
                 return ResourceManager.GetString("WednesdayTextLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day of the week.
+        /// </summary>
+        internal static string WeekDayPickerTitle {
+            get {
+                return ResourceManager.GetString("WeekDayPickerTitle", resourceCulture);
             }
         }
     }

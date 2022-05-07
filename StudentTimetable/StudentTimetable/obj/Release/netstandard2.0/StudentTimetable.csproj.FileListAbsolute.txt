@@ -4,10 +4,6 @@ C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\bin\Re
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.csproj.AssemblyReference.cache
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\App.xaml.g.cs
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\DayControl.xaml.g.cs
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\ModalPages\EditLessonModalPage.xaml.g.cs
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\Pages\SettingsPage.xaml.g.cs
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\Pages\TimetablePage.xaml.g.cs
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.AssemblyInfoInputs.cache
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.AssemblyInfo.cs
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.csproj.CoreCompileInputs.cache
@@ -22,9 +18,12 @@ C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Re
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.Resources.AppResources.en.resources
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.Resources.AppResources.ru.resources
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\StudentTimetable.csproj.GenerateResource.cache
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\Pages\HomeworkPage.xaml.g.cs
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\en\StudentTimetable.resources.dll
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\ru\StudentTimetable.resources.dll
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\HomeworkControl.xaml.g.cs
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\ModalPages\EditDayElementModalPage.xaml.g.cs
-C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\View\ModalPages\EditHomeworkModalPage.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\DayControl.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\HomeworkControl.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\ModalPages\EditHomeworkModalPage.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\ModalPages\EditLessonModalPage.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\Pages\HomeworkPage.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\Pages\SettingsPage.xaml.g.cs
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable\obj\Release\netstandard2.0\Views\Pages\TimetablePage.xaml.g.cs

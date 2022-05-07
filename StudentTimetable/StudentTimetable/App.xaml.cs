@@ -1,14 +1,22 @@
 ﻿using System;
+using System.IO;
+using StudentTimetable.Data;
 using StudentTimetable.Helpers;
-using StudentTimetable.View.Pages;
+using StudentTimetable.Views.Pages;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace StudentTimetable
 {
     public partial class App : Application
     {
+        private static TimetableDb _timetableDb;
+
+        public static TimetableDb TimetableDb =>
+            _timetableDb ??= new TimetableDb(Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "TimetableDatabase.db3"));
+
         public App()
         {
             InitializeComponent();

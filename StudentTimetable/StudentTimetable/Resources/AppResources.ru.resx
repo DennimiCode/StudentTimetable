@@ -156,6 +156,18 @@
   <data name="EndTimeLabel" xml:space="preserve">
     <value>Вр кон</value>
   </data>
+  <data name="ExitAlertNo" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ExitAlertText" xml:space="preserve">
+    <value>Вы действительно хотите выйти? Вы потеряете все введенные данные!</value>
+  </data>
+  <data name="ExitAlertTitle" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="ExitAlertYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
   <data name="FridayTextLabel" xml:space="preserve">
     <value>Пятница</value>
   </data>
@@ -168,11 +180,20 @@
   <data name="HomeworkControlTitle" xml:space="preserve">
     <value>Заголовок</value>
   </data>
+  <data name="HomeworkAddModalPageTitle" xml:space="preserve">
+    <value>Добавить домашнее задание</value>
+  </data>
   <data name="HomeworkPageCompletedTasks" xml:space="preserve">
     <value>Выполненные задания</value>
   </data>
   <data name="HomeworkPageCurrentTasks" xml:space="preserve">
     <value>Текущие задания</value>
+  </data>
+  <data name="HomeworkPageModalAddButton" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="HomeworkPageModalDeleteButton" xml:space="preserve">
+    <value>Удалить</value>
   </data>
   <data name="HomeworkPageTitle" xml:space="preserve">
     <value>Домашние задания</value>
@@ -190,7 +211,7 @@
     <value>Понедельник</value>
   </data>
   <data name="OfficeLabel" xml:space="preserve">
-    <value>Каб</value>
+    <value>Кабинет</value>
   </data>
   <data name="SaveSettingAlertNo" xml:space="preserve">
     <value>Позже</value>
@@ -217,7 +238,7 @@
     <value>Системная</value>
   </data>
   <data name="TeacherLabel" xml:space="preserve">
-    <value>Перподаватель</value>
+    <value>Преподаватель</value>
   </data>
   <data name="ThemeLabel" xml:space="preserve">
     <value>Тема</value>
@@ -233,5 +254,44 @@
   </data>
   <data name="WednesdayTextLabel" xml:space="preserve">
     <value>Среда</value>
+  </data>
+  <data name="HomeworkEdtPageModalTitle" xml:space="preserve">
+    <value>Редактировать домашнее задание</value>
+  </data>
+  <data name="AddLessonCheckEntriesAlertTitle" xml:space="preserve">
+    <value>Проверка полей</value>
+  </data>
+  <data name="AddLessonCheckEntriesAlertText" xml:space="preserve">
+    <value>Все поля должны быть заполнены, а кабинет должен быть числом!</value>
+  </data>
+  <data name="AddLessonCheckEntriesAlertAccept" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="WeekDayPickerTitle" xml:space="preserve">
+    <value>День недели</value>
+  </data>
+  <data name="SubjectPickerTittle" xml:space="preserve">
+    <value>Предмет</value>
+  </data>
+  <data name="HomeworkEditPageDueDateLabel" xml:space="preserve">
+    <value>Выполнить до</value>
+  </data>
+  <data name="HomeworkEditPageSubjectPickerLabel" xml:space="preserve">
+    <value>Предмет</value>
+  </data>
+  <data name="HomeworkEditPageTextEntry" xml:space="preserve">
+    <value>Задание</value>
+  </data>
+  <data name="IsCompletedLabel" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="EditHomeworkCheckEntriesAlertText" xml:space="preserve">
+    <value>Все поля должны быть заполнены!</value>
+  </data>
+  <data name="EditHomeworkCheckEntriesAlertTitle" xml:space="preserve">
+    <value>Проверка полей</value>
+  </data>
+  <data name="EditHomeworkCheckEntriesAlertAccept" xml:space="preserve">
+    <value>ОК</value>
   </data>
 </root>

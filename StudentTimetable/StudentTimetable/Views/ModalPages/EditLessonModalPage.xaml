@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources"
+             x:Class="StudentTimetable.Views.ModalPages.EditLessonModalPage"
+             Disappearing="EditLessonModalPageOnDisappearing">
+
+    <ContentPage.Content>
+        <Grid
+            BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
+                Dark={StaticResource WindowBackgroundColorDark}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <StackLayout Grid.Row="0" Orientation="Horizontal">
+                <Label
+                    x:Name="TitleLabel"
+                    Margin="15, 15, 0, 0"
+                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                        Dark={StaticResource DarkTextColor}}"
+                    FontSize="18"
+                    FontAttributes="Bold" />
+
+                <Button
+                    x:Name="LessonButton"
+                    Margin="5, 5, 10, 0"
+                    TextTransform="None"
+                    FontSize="18"
+                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                        Dark={StaticResource DarkTextColor}}"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                        Dark={StaticResource ZoneBackgroundColorDark}}"
+                    CornerRadius="15"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="LessonButtonOnClicked" />
+            </StackLayout>
+
+            <ScrollView Grid.Row="1">
+                <StackLayout x:Name="MainStackLayout">
+                    <Frame x:Name="Course"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+
+                        <StackLayout>
+                            <Entry
+                                x:Name="SubjectEntry"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Fill"
+                                PlaceholderColor="{AppThemeBinding Light={StaticResource PrimaryPlaceholderColor},
+                                    Dark={StaticResource DarkPlaceholderColor}}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                Text="{Binding SubjectName}"
+                                Placeholder="{x:Static resources:AppResources.EditLessonPageCourseLabel}" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame x:Name="Office"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+                        
+                        <StackLayout>
+                            <Entry
+                                x:Name="OfficeEntry"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Fill"
+                                PlaceholderColor="{AppThemeBinding Light={StaticResource PrimaryPlaceholderColor},
+                                    Dark={StaticResource DarkPlaceholderColor}}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                Text="{Binding OfficeNumber}"
+                                Placeholder="{x:Static resources:AppResources.OfficeLabel}" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--This Label placed for separating editing zones-->
+                    <Label HeightRequest="30" />
+                    <Frame x:Name="WeekDay"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Picker
+                                x:Name="WeekDayPicker"
+                                Title="{x:Static resources:AppResources.WeekDayPickerTitle}"
+                                MinimumWidthRequest="150"
+                                WidthRequest="150"
+                                TitleColor="{AppThemeBinding Dark={StaticResource DarkTextColor}}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                                HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame x:Name="StartTime"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                Text="{x:Static resources:AppResources.EditLessonPageStartTimeLabel}"
+                                FontSize="18"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand" />
+                            <TimePicker
+                                x:Name="StartTimeTimePicker"
+                                Time="{Binding StartTime}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame x:Name="EndTime"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                Text="{x:Static resources:AppResources.EditLessonPageEndTimeLabel}"
+                                FontSize="18"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand" />
+                            <TimePicker
+                                x:Name="EndTimeTimePicker"
+                                Time="{Binding EndTime}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--This Label placed for separating editing zones-->
+                    <Label HeightRequest="30" />
+                    <Frame x:Name="Teacher"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+                        
+                        <Grid>
+                            <Entry
+                                x:Name="TeacherEntry"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Fill"
+                                PlaceholderColor="{AppThemeBinding Light={StaticResource PrimaryPlaceholderColor},
+                                    Dark={StaticResource DarkPlaceholderColor}}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                Text="{Binding TeacherFullName}"
+                                Placeholder="{x:Static resources:AppResources.TeacherLabel}" />
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

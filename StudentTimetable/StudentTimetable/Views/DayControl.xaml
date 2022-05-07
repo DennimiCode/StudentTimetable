@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentTimetable.Views.DayControl"
+             xmlns:m="clr-namespace:StudentTimetable.Models;assembly=StudentTimetable"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources">
+
+    <ContentView.Content>
+        <StackLayout>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="DayControlOnTapped" />
+            </StackLayout.GestureRecognizers>
+
+            <Frame x:Name="DayControlFrame"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                        Dark={StaticResource CardBackgroundColorDark}}"
+                   CornerRadius="15"
+                   HeightRequest="35"
+                   VerticalOptions="StartAndExpand">
+                <Grid VerticalOptions="StartAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="18" />
+                        <RowDefinition Height="18" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="StartTimeLabel"
+                        Text="{Binding StartTime}"
+                        TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                            Dark={StaticResource DarkTextColor}}" />
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        x:Name="EndTimeLabel"
+                        Text="{Binding EndTime}"
+                        TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                            Dark={StaticResource DarkTextColor}}" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        HorizontalOptions="StartAndExpand"
+                        x:Name="SubjectLabel"
+                        Text="{Binding SubjectName}"
+                        LineBreakMode="TailTruncation"
+                        TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                            Dark={StaticResource DarkTextColor}}" />
+
+                    <StackLayout Grid.Row="1"
+                                 Grid.Column="1"
+                                 Orientation="Horizontal">
+                        <Label
+                            x:Name="OfficeLabel"
+                            HorizontalOptions="StartAndExpand"
+                            Text="{Binding OfficeNumber}"
+                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                Dark={StaticResource DarkTextColor}}" />
+
+                        <Label
+                            x:Name="TeacherLabel"
+                            Text="{Binding TeacherFullName}"
+                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                Dark={StaticResource DarkTextColor}}"
+                            LineBreakMode="TailTruncation"
+                            HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

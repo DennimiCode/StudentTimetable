@@ -61,3 +61,13 @@ C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\ob
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\obj\iPhone\Debug\StudentTimetable.iOS.csproj.CopyComplete
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\obj\iPhone\Debug\StudentTimetable.iOS.exe
 C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\obj\iPhone\Debug\StudentTimetable.iOS.pdb
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\SQLite-net.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\SQLitePCLRaw.core.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\System.Buffers.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\System.Memory.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\en\StudentTimetable.resources.dll
+C:\Users\denni\Desktop\StudentTimetable\StudentTimetable\StudentTimetable.iOS\bin\iPhone\Debug\ru\StudentTimetable.resources.dll

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources;assembly=StudentTimetable"
+             x:Class="StudentTimetable.Views.ModalPages.EditHomeworkModalPage"
+             Disappearing="EditHomeworkModalPageOnDisappearing">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
+                Dark={StaticResource WindowBackgroundColorDark}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0"
+                     Orientation="Horizontal">
+                <Label
+                    x:Name="TitleLabel"
+                    Margin="15, 15, 0, 0"
+                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                        Dark={StaticResource DarkTextColor}}"
+                    FontSize="18"
+                    FontAttributes="Bold" />
+
+                <Button
+                    x:Name="HomeworkButton"
+                    Margin="5, 5, 10, 0"
+                    TextTransform="None"
+                    FontSize="18"
+                    TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                        Dark={StaticResource DarkTextColor}}"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                        Dark={StaticResource ZoneBackgroundColorDark}}"
+                    CornerRadius="15"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="HomeworkButtonOnClicked" />
+            </StackLayout>
+            
+            <ScrollView Grid.Row="1">
+                <StackLayout>
+                    <Frame x:Name="HomeworkText"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+
+                        <StackLayout>
+                            <Entry
+                                x:Name="HomeworkTextEntry"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Fill"
+                                PlaceholderColor="{AppThemeBinding Light={StaticResource PrimaryPlaceholderColor},
+                                    Dark={StaticResource DarkPlaceholderColor}}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}"
+                                Text="{Binding Text}"
+                                Placeholder="{x:Static resources:AppResources.HomeworkEditPageTextEntry}" />
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Frame x:Name="HomeworkSubject"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+
+                        <StackLayout Orientation="Horizontal">
+                            <Picker
+                                x:Name="SubjectPicker"
+                                Title="{x:Static resources:AppResources.SubjectPickerTittle}"
+                                VerticalOptions="Center"
+                                HorizontalOptions="FillAndExpand"
+                                TitleColor="{AppThemeBinding Dark={StaticResource DarkTextColor}}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}" />
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Frame x:Name="HomeworkIsCompleted"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                FontSize="18"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{x:Static resources:AppResources.IsCompletedLabel}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}" />
+                            
+                            <CheckBox
+                                x:Name="IsCompletedCheckBox"
+                                IsChecked="{Binding IsCompleted}"
+                                VerticalOptions="Center"
+                                HorizontalOptions="EndAndExpand"
+                                Color="#306dc9"/>
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Frame x:Name="HomeworkDueDate"
+                           Margin="10, 0"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource CardBackgroundColor},
+                                Dark={StaticResource CardBackgroundColorDark}}"
+                           CornerRadius="10">
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                FontSize="18"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{x:Static resources:AppResources.HomeworkEditPageDueDateLabel}"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}" />
+                            
+                            <DatePicker
+                                x:Name="DueDateDatePicker"
+                                VerticalOptions="Center"
+                                Date="{Binding DueDate}"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                    Dark={StaticResource DarkTextColor}}" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

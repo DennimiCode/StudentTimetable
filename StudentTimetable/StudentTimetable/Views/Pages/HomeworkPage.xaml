@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentTimetable.Views.Pages.HomeworkPage"
+             xmlns:resources="clr-namespace:StudentTimetable.Resources"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <Grid
+            BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColor},
+                Dark={StaticResource WindowBackgroundColorDark}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0"
+                               Margin="15, 15, 0, 15"
+                               Text="{x:Static resources:AppResources.HomeworkPageTitle}"
+                               TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                    Dark={StaticResource DarkTextColor}}"
+                               FontSize="18"
+                               FontAttributes="Bold" />
+
+                        <Button
+                            Grid.Column="1"
+                            x:Name="HomeworkButton"
+                            Margin="5, 5, 10, 0"
+                            Text="+"
+                            FontSize="18"
+                            TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor},
+                                Dark={StaticResource DarkTextColor}}"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource ZoneBackgroundColor}, 
+                                Dark={StaticResource ZoneBackgroundColorDark}}"
+                            CornerRadius="15"
+                            HorizontalOptions="EndAndExpand"
+                            WidthRequest="45"
+                            HeightRequest="50"
+                            Clicked="HomeworkButtonOnClicked" />
+                    </Grid>
+                </StackLayout>
+            </Grid>
+
+            <ScrollView Grid.Row="1">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Row="0">
+                            <Label
+                                Text="{x:Static resources:AppResources.HomeworkPageCurrentTasks}"
+                                FontSize="20"
+                                Margin="20, 0, 0, 0"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            
+                            <StackLayout x:Name="CurrentTasksStackLayout">
+                                
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1">
+                            <Label
+                                Text="{x:Static resources:AppResources.HomeworkPageCompletedTasks}"
+                                FontSize="20"
+                                Margin="20, 10, 0, 0"
+                                TextColor="{AppThemeBinding Light={StaticResource PrimaryTextColor}, 
+                                        Dark={StaticResource DarkTextColor}}" />
+                            
+                            <StackLayout x:Name="CompletedTasksStackLayout">
+                                
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                    <!--This Label placed for navigation bar-->
+                    <Label HeightRequest="100" />
+                </StackLayout>
+            </ScrollView>
+
+            <Frame
+                Grid.Row="1"
+                x:Name="NavigationBar"
+                BackgroundColor="{AppThemeBinding Light={StaticResource NavBarBackgroundColor}, 
+                    Dark={StaticResource NavBarBackgroundColorDark}}"
+                Margin="15"
+                HeightRequest="40"
+                CornerRadius="20"
+                VerticalOptions="EndAndExpand">
+
+                <StackLayout Orientation="Horizontal">
+                    <Button
+                        x:Name="TimetableButton"
+                        Text="🗓️"
+                        BackgroundColor="{AppThemeBinding Light={StaticResource NavBarButtonBackgroundColor}, 
+                            Dark={StaticResource NavBarButtonBackgroundColorDark}}"
+                        HorizontalOptions="StartAndExpand"
+                        CornerRadius="15"
+                        WidthRequest="105"
+                        HeightRequest="50"
+                        Clicked="TimetableButtonOnClicked" />
+
+                    <Button
+                        x:Name="HomeTasksButton"
+                        Text="📝"
+                        BackgroundColor="{AppThemeBinding Light={StaticResource NavBarButtonBackgroundColor}, 
+                            Dark={StaticResource NavBarButtonBackgroundColorDark}}"
+                        HorizontalOptions="CenterAndExpand"
+                        CornerRadius="15"
+                        WidthRequest="105"
+                        HeightRequest="50" />
+
+                    <Button
+                        x:Name="SettingsButton"
+                        Text="⚙️"
+                        BackgroundColor="{AppThemeBinding Light={StaticResource NavBarButtonBackgroundColor}, 
+                            Dark={StaticResource NavBarButtonBackgroundColorDark}}"
+                        HorizontalOptions="EndAndExpand"
+                        CornerRadius="15"
+                        WidthRequest="105"
+                        HeightRequest="50"
+                        Clicked="SettingsButtonOnClicked" />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
