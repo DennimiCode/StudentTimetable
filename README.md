@@ -7,7 +7,7 @@ StudentTimetable is a simple open-source study timetable manager.
 ## Installing and running StudentTimetable
 
 ### Requirements
-<ul><li>Android version 5.0 (Lollipop) or later.</li></ul>
+<ul><li>Android version 7.1 (Nougat) or later.</li></ul>
 <ul>
   <li>Also, if you want create your own build, use</li>
   <ul><li>Visual Studio 2019 or later;</li></ul>
